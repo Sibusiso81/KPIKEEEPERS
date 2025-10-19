@@ -201,12 +201,12 @@ export default function Home() {
       <div className="flex flex-col justify-between p-4 space-y-6">
         <div>
           <div className="flex space-x-1 text-sm text-gray-700">
-            <p>Cupertino, CA</p>
+            <p>Pietermaritzburg / Hybrid, SA</p>
             <span>-</span>
-            <p>2024</p>
+            <p>2025</p>
           </div>
-          <h2 className="text-2xl font-semibold text-black mt-3 w-full md:w-52">
-            Organizational Culture & Change
+          <h2 className="text-2xl font-semibold text-black mt-3 w-full md:w-72 ">
+             Hybrid HR Blueprint for KickStart Solutions
           </h2>
         </div>
 
@@ -223,33 +223,33 @@ export default function Home() {
 
       {/* Right Section */}
       <div className="flex flex-col justify-between p-4 space-y-6">
-        <p>
-          Apple’s rapid global expansion had created distinct subcultures
-          across teams, leading to reduced collaboration and inconsistent
-          leadership behaviors.
-        </p>
+  <p>
+    A Small-sized organization was facing high employee turnover and low engagement 
+    scores due to unclear role expectations and inconsistent performance feedback 
+    across departments.
+  </p>
 
-        <div className="flex flex-col space-y-3">
-          <div className="flex justify-between">
-            <p>Service</p>
-            <p className="w-3/4 font-bold text-right">
-              Leadership Alignment & Culture Transformation
-            </p>
-          </div>
-          <div className="flex justify-between">
-            <p>Solution</p>
-            <p className="w-3/4 font-bold text-right">
-              Cultural Alignment Program
-            </p>
-          </div>
-          <div className="flex justify-between">
-            <p>Outcome</p>
-            <p className="w-3/4 font-bold text-right">
-              25% increase in cross-team collaboration metrics
-            </p>
-          </div>
-        </div>
-      </div>
+  <div className="flex flex-col space-y-3">
+    <div className="flex justify-between">
+      <p>Service</p>
+      <p className="w-3/4 font-bold text-right">
+        Srategy Revision
+      </p>
+    </div>
+    <div className="flex justify-between">
+      <p>Solution</p>
+      <p className="w-3/4 font-bold text-right">
+        HR Blueprint
+      </p>
+    </div>
+    <div className="flex justify-between">
+      <p>Outcome</p>
+      <p className="w-3/4 font-bold text-right">
+        30% improvement in employee engagement and 18% reduction in annual turnover rates.
+      </p>
+    </div>
+  </div>
+</div>
     </div>
   </Link>
 
