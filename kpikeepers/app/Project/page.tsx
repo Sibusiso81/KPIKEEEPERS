@@ -317,7 +317,7 @@ function Page() {
             experience for the digital age. Every policy, platform, and
             initiative is designed to empower individuals, strengthen teams, and
             build an adaptive, resilient workforce capable of driving
-            transformation in South Africa's emerging tech landscape.
+            transformation in South Africa&apos;s emerging tech landscape.
           </p>
           <div className="flex space-x-3 mt-2 p-1.5 font-bold">
             <div className="border-l-2 border-neutral-950"></div>
@@ -374,7 +374,7 @@ function Page() {
           </p>
           <ul className="list-disc list-inside flex flex-col gap-y-2 text-neutral-700">
             <li>
-              A unified HR framework aligning KickStart's hybrid workforce with
+              A unified HR framework aligning KickStart&apos;s hybrid workforce with
               its vision for growth, innovation, and long-term sustainability.
             </li>
             <li>
