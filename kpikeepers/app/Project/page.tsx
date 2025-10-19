@@ -27,102 +27,115 @@ function page() {
       src: "/Screenshot 2025-10-19 211407.png",
       alt: "Slide 1",
       caption: "Introduction to KickStart Solutions",
+      isBlue:false,
     },
     {
       src: "/Screenshot 2025-10-19 211455.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
     {
       src: "/Screenshot 2025-10-19 211546.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
     {
       src: "/Screenshot 2025-10-19 211617.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
 
     {
       src: "/Screenshot 2025-10-19 211640.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
 
     {
-      src: "/Screenshot 2025-10-19 211653.png",
+      src: "/Screenshot 2025-10-19 224127.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
 
-    {
-      src: "/Screenshot 2025-10-19 211653.png",
-      alt: "Slide 2",
-      caption: "Our Hybrid Work Model",
-    },
+   
 
     {
       src: "/Screenshot 2025-10-19 211708.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
 
     {
-      src: "/Screenshot 2025-10-19 211727.png",
+      src: "/Screenshot 2025-10-19 224209.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
 
     {
       src: "/Screenshot 2025-10-19 211742.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
 
     {
       src: "/Screenshot 2025-10-19 211757.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
 
     {
       src: "/Screenshot 2025-10-19 211815.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
 
     {
       src: "/Screenshot 2025-10-19 211829.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
 
     {
       src: "/Screenshot 2025-10-19 211842.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
     {
       src: "/Screenshot 2025-10-19 211853.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
     {
       src: "/Screenshot 2025-10-19 211904.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
    
     {
       src: "/Screenshot 2025-10-19 211915.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:false,
     },
     {
       src: "/Screenshot 2025-10-19 211936.png",
       alt: "Slide 2",
       caption: "Our Hybrid Work Model",
+      isBlue:true,
     },
     
 

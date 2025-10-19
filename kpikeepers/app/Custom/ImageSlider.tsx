@@ -9,6 +9,7 @@ interface ImageSliderProps {
   images: Array<{
     src: string
     alt: string
+    isBlue:boolean,
     caption?: string
   }>
   className?: string
@@ -67,7 +68,7 @@ export function ImageSlider({ images, className }: ImageSliderProps) {
   const SliderContent = ({ inFullscreen = false }: { inFullscreen?: boolean }) => (
     <div className={cn("relative w-full ", inFullscreen ? "h-screen max-h-screen" : "aspect-[16/9]")}>
       {/* Main Image */}
-      <div className="relative h-full w-full bg-blue-50 overflow-hidden rounded-lg ">
+      <div className={`relative h-full w-full  overflow-hidden rounded-lg ${images[currentIndex]?.isBlue ? "bg-indigo-900" : "bg-blue-50"}`}>
         <img
           src={images[currentIndex].src || "/placeholder.svg"}
           alt={images[currentIndex].alt}
