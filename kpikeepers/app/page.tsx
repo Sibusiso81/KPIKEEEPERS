@@ -8,11 +8,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Service from "./Custom/Service";
 import Footer from "./Custom/Footer";
+import Btn from "./Custom/Btn";
+import { Toaster } from "sonner";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <main className="flex-col overflow-hidden font-display space-y-24">
+     
       <section
         className="w-screen space-y-24 md:space-y-0 md:space-x-0 md:h-screen bg-cover bg-center p-4 flex flex-col justify-between"
         style={{
@@ -23,7 +26,8 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto p-2 border-[#eaeaea] grid grid-cols-2 lg:grid-cols-3 items-center gap-4 rounded-md relative z-40">
           <div className="hidden lg:flex items-center">
             <ul className="flex items-end space-x-4 text-white text-sm xl:text-md">
-              <li>ABOUT US</li>
+             
+              <Btn name="ABOUT US"></Btn>
               <li>WORK</li>
               <li>SERVICES</li>
               <li className="flex items-end space-x-1.5 ">

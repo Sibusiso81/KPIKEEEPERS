@@ -15,10 +15,16 @@ import {
 import Image from "next/image";
 import React, { useState } from "react";
 import Navbar from "../Custom/Navbar";
+import { ImageSlider } from "../Custom/ImageSlider";
 
 function page() {
   const [isOpen, setIsOpen] = useState(false);
    const [isPresentationMode, setIsPresentationMode] = useState(false)
+
+   const sampleImages =[
+    { src: "/Screenshot 2025-10-14 014828.png", alt: "Slide 1", caption: "Introduction to KickStart Solutions" },
+    { src: "/Screenshot 2025-10-14 014849.png", alt: "Slide 2", caption: "Our Hybrid Work Model" },
+   ]
 
   return (
      <section className={`w-full min-h-screen flex flex-col space-y-10 font-display overflow-x-hidden overflow-y-auto ${isPresentationMode? '':''}`}>
@@ -39,7 +45,7 @@ function page() {
   {/* Optimized iframe container */}
   <div className="flex-1 w-full">
     <iframe
-      src="https://1drv.ms/p/c/7ff06c1182efd10d/IQTla8QkRy8hT6QYJanLaau0AeW08OtDbD6gmA0BlFh3sKI?em=2&wdAr=1.7777777777777777"
+      src="/The_KPI_Keepers.pdf[1].pdf"
       className="w-full h-full border-none outline-none"
       title="Presentation in fullscreen mode"
       allowFullScreen
@@ -187,7 +193,7 @@ function page() {
           </div>
           <div className="relative w-full h-[200px] md:h-[400px] lg:h-[600px] rounded-lg overflow-hidden">
             <iframe
-              src="https://1drv.ms/p/c/7ff06c1182efd10d/IQQN0e-CEWzwIIB_iQAAAAAAARid0pRHOzw5zGZBxM6rJdw?em=2&amp;wdAr=1.3333333333333333"
+              src="/The_KPI_Keepers.pdf[1].pdf"
               className="absolute inset-0 w-full h-full"
               title="KickStart Solutions HR Blueprint Presentation"
             >
@@ -229,6 +235,7 @@ function page() {
             </li>
           </ul>
         </div>
+        <ImageSlider images={sampleImages} />
       </div>
     </section>
   );
