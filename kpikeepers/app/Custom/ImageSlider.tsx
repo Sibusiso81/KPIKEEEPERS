@@ -65,9 +65,9 @@ export function ImageSlider({ images, className }: ImageSliderProps) {
   }, [isFullscreen])
 
   const SliderContent = ({ inFullscreen = false }: { inFullscreen?: boolean }) => (
-    <div className={cn("relative", inFullscreen ? "h-full" : "aspect-[16/9]")}>
+    <div className={cn("relative w-full ", inFullscreen ? "h-screen max-h-screen" : "aspect-[16/9]")}>
       {/* Main Image */}
-      <div className="relative h-full w-full overflow-hidden rounded-lg bg-muted">
+      <div className="relative h-full w-full bg-blue-50 overflow-hidden rounded-lg ">
         <img
           src={images[currentIndex].src || "/placeholder.svg"}
           alt={images[currentIndex].alt}
@@ -114,9 +114,9 @@ export function ImageSlider({ images, className }: ImageSliderProps) {
         )}
 
         {/* Image Counter */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-background/80 px-3 py-1 text-sm backdrop-blur-sm">
+       {/*  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-background/80 px-3 py-1 text-sm backdrop-blur-sm">
           {currentIndex + 1} / {images.length}
-        </div>
+        </div> */}
       </div>
 
       {/* Caption */}
@@ -156,7 +156,7 @@ export function ImageSlider({ images, className }: ImageSliderProps) {
             {/* Header */}
        
             {/* Fullscreen Content */}
-            <div className="flex-1 p-4">
+            <div className="flex-1">
               <SliderContent inFullscreen />
             </div>
 

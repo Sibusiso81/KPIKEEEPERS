@@ -16,45 +16,149 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Navbar from "../Custom/Navbar";
 import { ImageSlider } from "../Custom/ImageSlider";
+import Footer from "../Custom/Footer";
 
 function page() {
   const [isOpen, setIsOpen] = useState(false);
-   const [isPresentationMode, setIsPresentationMode] = useState(false)
+  const [isPresentationMode, setIsPresentationMode] = useState(false);
 
-   const sampleImages =[
-    { src: "/Screenshot 2025-10-14 014828.png", alt: "Slide 1", caption: "Introduction to KickStart Solutions" },
-    { src: "/Screenshot 2025-10-14 014849.png", alt: "Slide 2", caption: "Our Hybrid Work Model" },
-   ]
+  const sampleImages = [
+    {
+      src: "/Screenshot 2025-10-19 211407.png",
+      alt: "Slide 1",
+      caption: "Introduction to KickStart Solutions",
+    },
+    {
+      src: "/Screenshot 2025-10-19 211455.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+    {
+      src: "/Screenshot 2025-10-19 211546.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+    {
+      src: "/Screenshot 2025-10-19 211617.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211640.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211653.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211653.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211708.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211727.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211742.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211757.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211815.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211829.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+
+    {
+      src: "/Screenshot 2025-10-19 211842.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+    {
+      src: "/Screenshot 2025-10-19 211853.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+    {
+      src: "/Screenshot 2025-10-19 211904.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+   
+    {
+      src: "/Screenshot 2025-10-19 211915.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+    {
+      src: "/Screenshot 2025-10-19 211936.png",
+      alt: "Slide 2",
+      caption: "Our Hybrid Work Model",
+    },
+    
+
+  ];
 
   return (
-     <section className={`w-full min-h-screen flex flex-col space-y-10 font-display overflow-x-hidden overflow-y-auto ${isPresentationMode? '':''}`}>
+    <section
+      className={`w-full min-h-screen flex flex-col space-y-10 font-display overflow-x-hidden overflow-y-auto ${
+        isPresentationMode ? "" : ""
+      }`}
+    >
       {isPresentationMode && (
         <div className="fixed inset-0 z-50 bg-black flex flex-col h-screen">
-  {/* Exit button */}
-  <div className="flex justify-end p-4">
-    <button
-      onClick={() => setIsPresentationMode(false)}
-      className="text-white hover:text-neutral-300 transition-colors flex items-center gap-2 bg-neutral-800 px-4 py-2 rounded-lg"
-      aria-label="Exit presentation mode"
-    >
-      <Minimize2 className="w-5 h-5" />
-      <span className="text-sm font-medium">Exit Presentation</span>
-    </button>
-  </div>
+          {/* Exit button */}
+          <div className="flex justify-end p-4">
+            <button
+              onClick={() => setIsPresentationMode(false)}
+              className="text-white hover:text-neutral-300 transition-colors flex items-center gap-2 bg-neutral-800 px-4 py-2 rounded-lg"
+              aria-label="Exit presentation mode"
+            >
+              <Minimize2 className="w-5 h-5" />
+              <span className="text-sm font-medium">Exit Presentation</span>
+            </button>
+          </div>
 
-  {/* Optimized iframe container */}
-  <div className="flex-1 w-full">
-    <iframe
-      src="/The_KPI_Keepers.pdf[1].pdf"
-      className="w-full h-full border-none outline-none"
-      title="Presentation in fullscreen mode"
-      allowFullScreen
-      loading="lazy"
-      
-    />
-  </div>
-</div>
-
+          {/* Optimized iframe container */}
+          <div className="flex-1 w-full">
+            <iframe
+              src="/The_KPI_Keepers.pdf[1].pdf"
+              className="w-full h-full border-none outline-none"
+              title="Presentation in fullscreen mode"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
+        </div>
       )}
 
       <div className="flex-col space-y-4">
@@ -76,17 +180,37 @@ function page() {
 
           <div className="flex flex-nowrap justify-end self-end items-center space-x-8">
             <p className="text-sm xl:text-md">CONTACT US</p>
-            <button aria-label="open menu" aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)} className="p-1">
-              <Menu className={`cursor-pointer stroke-black ${isOpen ? "hidden" : ""}`} />
+            <button
+              aria-label="open menu"
+              aria-expanded={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-1"
+            >
+              <Menu
+                className={`cursor-pointer stroke-black ${
+                  isOpen ? "hidden" : ""
+                }`}
+              />
             </button>
-            <button aria-label="close menu" aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)} className="p-1">
-              <X className={`cursor-pointer ${isOpen ? "mr-10 stroke-black" : "hidden"}`} />
+            <button
+              aria-label="close menu"
+              aria-expanded={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-1"
+            >
+              <X
+                className={`cursor-pointer ${
+                  isOpen ? "mr-10 stroke-black" : "hidden"
+                }`}
+              />
             </button>
           </div>
         </div>
         <div className="w-full border-b-2 border-b-neutral-300" />
       </div>
-      <AnimatePresence mode="wait">{isOpen ? <Navbar /> : null}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isOpen ? <Navbar /> : null}
+      </AnimatePresence>
       <div className="p-5 space-y-6 flex flex-col justify-center mx-auto w-full max-w-7xl">
         <div className="flex w-full items-center justify-center space-x-4">
           {/* Left box */}
@@ -96,7 +220,9 @@ function page() {
 
           {/* Text and line */}
           <div className="flex items-center w-full space-x-2">
-            <h2 className="text-lg font-semibold text-neutral-800 whitespace-nowrap">WORK</h2>
+            <h2 className="text-lg font-semibold text-neutral-800 whitespace-nowrap">
+              WORK
+            </h2>
             <div className="flex-1 border-t border-neutral-800"></div>
           </div>
         </div>
@@ -106,12 +232,18 @@ function page() {
             Hybrid HR Blueprint for KickStart Solutions
           </h2>
           <p className="text-neutral-500 md:text-md lg:text-lg lg:w-1/2">
-            A comprehensive HR strategy ensuring equity, performance, and engagement across a hybrid workforce.
+            A comprehensive HR strategy ensuring equity, performance, and
+            engagement across a hybrid workforce.
           </p>
         </div>
 
         <div className="relative overflow-hidden w-full h-[200px] md:h-[400px] lg:h-[500px] max-w-7xl mx-auto">
-          <Image src="/ant-rozetsky-HXOllTSwrpM-unsplash.jpg" alt="About Page Image" fill className="object-cover" />
+          <Image
+            src="/ant-rozetsky-HXOllTSwrpM-unsplash.jpg"
+            alt="About Page Image"
+            fill
+            className="object-cover"
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -153,33 +285,38 @@ function page() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto p-6 md:p-10 space-y-8 flex flex-col justify-center">
+      <div className="max-w-5xl mx-auto p-6 md:p-10 space-y-20 flex flex-col justify-center">
         <div className="flex flex-col space-y-4">
-          <h2 className="text-2xl font-medium">Project Overview</h2>
+          <h2 className="text-2xl lg:text-3xl font-medium">Project Overview</h2>
           <p className="text-neutral-500">
-            A forward-thinking human resource strategy crafted for a rapidly growing VR tourism startup redefining
-            travel through immersive technology. This blueprint establishes a people-first, data-driven foundation
-            designed to support hybrid collaboration, innovation, and long-term growth.
+            A forward-thinking human resource strategy crafted for a rapidly
+            growing VR tourism startup redefining travel through immersive
+            technology. This blueprint establishes a people-first, data-driven
+            foundation designed to support hybrid collaboration, innovation, and
+            long-term growth.
           </p>
         </div>
 
         <div className="flex flex-col space-y-4">
-          <h2 className="text-2xl font-medium">KPI Keepers Vision</h2>
+          <h2 className="text-2xl lg:text-3xl font-medium">KPI Keepers Vision</h2>
           <p className="text-neutral-500">
-            Guided by the belief that people and technology should evolve together, the KickStart HR Blueprint
-            reimagines the employee experience for the digital age. Every policy, platform, and initiative is designed
-            to empower individuals, strengthen teams, and build an adaptive, resilient workforce capable of driving
+            Guided by the belief that people and technology should evolve
+            together, the KickStart HR Blueprint reimagines the employee
+            experience for the digital age. Every policy, platform, and
+            initiative is designed to empower individuals, strengthen teams, and
+            build an adaptive, resilient workforce capable of driving
             transformation in South Africa's emerging tech landscape.
           </p>
           <div className="flex space-x-3 mt-2 p-1.5 font-bold">
             <div className="border-l-2 border-neutral-950"></div>
-            <p className="text-md md:text-lg lg:text-xl max-w-7xl">
-              "Empowering people to innovate, connect, and grow — wherever they work."
+            <p className="text-md md:text-lg lg:text-2xl max-w-7xl">
+              "Empowering people to innovate, connect, and grow — wherever they
+              work."
             </p>
           </div>
         </div>
 
-        <div className="flex flex-col space-y-4">
+        {/* <div className="flex flex-col space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-medium">Presentation</h2>
             <button
@@ -202,41 +339,52 @@ function page() {
                 Microsoft Office
               </a>{" "}
               presentation, powered by{" "}
-              <a target="_blank" href="https://office.com/webapps" rel="noreferrer">
+              <a
+                target="_blank"
+                href="https://office.com/webapps"
+                rel="noreferrer"
+              >
                 Office
               </a>
               .
             </iframe>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col space-y-4">
+       
+        <ImageSlider images={sampleImages} />
+         <div className="flex flex-col space-y-4">
           <h2 className="text-2xl font-medium">Key Features</h2>
           <p className="text-neutral-500">
-            Through the KickStart Solutions HR Blueprint, we champion a hybrid model of work that values flexibility,
-            inclusion, and continuous learning.
+            Through the KickStart Solutions HR Blueprint, we champion a hybrid
+            model of work that values flexibility, inclusion, and continuous
+            learning.
           </p>
           <ul className="list-disc list-inside flex flex-col gap-y-2 text-neutral-700">
             <li>
-              A unified HR framework aligning KickStart's hybrid workforce with its vision for growth, innovation, and
-              long-term sustainability.
+              A unified HR framework aligning KickStart's hybrid workforce with
+              its vision for growth, innovation, and long-term sustainability.
             </li>
             <li>
-              A culture-first strategy that fosters inclusion, engagement, and belonging across remote and in-office
-              teams.
-            </li>
-            <li>A cloud-based HR system empowering informed, agile, and transparent people management.</li>
-            <li>
-              A virtual onboarding and training experience that connects, equips, and inspires employees from day one.
+              A culture-first strategy that fosters inclusion, engagement, and
+              belonging across remote and in-office teams.
             </li>
             <li>
-              A holistic compensation and wellness model that promotes fairness, resilience, and work-life balance in a
-              hybrid environment.
+              A cloud-based HR system empowering informed, agile, and
+              transparent people management.
+            </li>
+            <li>
+              A virtual onboarding and training experience that connects,
+              equips, and inspires employees from day one.
+            </li>
+            <li>
+              A holistic compensation and wellness model that promotes fairness,
+              resilience, and work-life balance in a hybrid environment.
             </li>
           </ul>
         </div>
-        <ImageSlider images={sampleImages} />
       </div>
+      <Footer/>
     </section>
   );
 }
