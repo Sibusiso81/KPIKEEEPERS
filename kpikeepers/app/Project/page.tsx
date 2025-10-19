@@ -5,7 +5,6 @@ import {
   ChevronDown,
   Grid,
   MapPin,
-  Maximize2,
   Menu,
   Minimize2,
   PencilRuler,
@@ -18,7 +17,7 @@ import Navbar from "../Custom/Navbar";
 import { ImageSlider } from "../Custom/ImageSlider";
 import Footer from "../Custom/Footer";
 
-function page() {
+function Page() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPresentationMode, setIsPresentationMode] = useState(false);
 
@@ -323,8 +322,8 @@ function page() {
           <div className="flex space-x-3 mt-2 p-1.5 font-bold">
             <div className="border-l-2 border-neutral-950"></div>
             <p className="text-md md:text-lg lg:text-2xl max-w-7xl">
-              "Empowering people to innovate, connect, and grow — wherever they
-              work."
+              &apos;Empowering people to innovate, connect, and grow — wherever they
+              work.&apos;
             </p>
           </div>
         </div>
@@ -402,4 +401,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
