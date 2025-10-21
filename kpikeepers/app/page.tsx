@@ -27,7 +27,7 @@ export default function Home() {
           <div className="hidden lg:flex items-center">
             <ul className="flex items-end space-x-4 text-white text-sm xl:text-md">
              
-              <Btn name="ABOUT US"></Btn>
+              <li>ABOUT US</li>
               <li>WORK</li>
               <li>SERVICES</li>
               <li className="flex items-end space-x-1.5 ">
@@ -161,7 +161,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+<Service />
       <section className="w-screen h-fit p-10 flex flex-col space-y-10">
         <div className="flex w-full max-w-7xl mx-auto items-center justify-center space-x-4">
           {/* Left box */}
@@ -366,7 +366,7 @@ export default function Home() {
 
       </section>
 
-      <Service />
+      
       <Footer />
     </main>
   );
