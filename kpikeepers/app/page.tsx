@@ -8,8 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Service from "./Custom/Service";
 import Footer from "./Custom/Footer";
-import Btn from "./Custom/Btn";
-import { Toaster } from "sonner";
+
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);

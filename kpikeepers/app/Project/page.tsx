@@ -29,23 +29,9 @@ import React, { useState } from "react";
 import Navbar from "../Custom/Navbar";
 import { ImageSlider } from "../Custom/ImageSlider";
 import Footer from "../Custom/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent,CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  Bar,
-  BarChart,
-  Line,
-  LineChart,
-  Pie,
-  PieChart,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Legend,
-  ResponsiveContainer,
-} from "recharts"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
+
 import { Chart1 } from "../Custom/Chart1";
 import { Chart2 } from "../Custom/Chart2";
 import { Chart3 } from "../Custom/Chart3";
@@ -107,28 +93,7 @@ import { Chart3 } from "../Custom/Chart3";
       color: "text-chart-3",
     },
   ]
-    const hrFunctionData = [
-    { name: "Recruitment", value: 15, fill: "hsl(var(--chart-1))" },
-    { name: "Compensation", value: 18, fill: "hsl(var(--chart-2))" },
-    { name: "Training", value: 20, fill: "hsl(var(--chart-3))" },
-    { name: "Relations", value: 12, fill: "hsl(var(--chart-4))" },
-    { name: "HRIS", value: 10, fill: "hsl(var(--chart-5))" },
-    { name: "Performance", value: 13, fill: "hsl(var(--chart-1))" },
-    { name: "Compliance", value: 7, fill: "hsl(var(--chart-2))" },
-    { name: "Wellness", value: 5, fill: "hsl(var(--chart-3))" },
-  ]
-   const impactData = [
-    { area: "Recruitment", impact: 85, color: "hsl(var(--chart-2))" },
-    { area: "Training", impact: 92, color: "hsl(var(--chart-1))" },
-    { area: "Wellness", impact: 88, color: "hsl(var(--chart-2))" },
-    { area: "Performance", impact: 90, color: "hsl(var(--chart-1))" },
-    { area: "Compliance", impact: 95, color: "hsl(var(--chart-2))" },
-  ]
-  const COLORS = [
-  "hsl(var(--chart-1))",
-  "hsl(var(--chart-2))",
-];
-
+ 
 function Page() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPresentationMode, setIsPresentationMode] = useState(false);
@@ -528,7 +493,7 @@ function Page() {
               <CardContent className="space-y-3">
                 <p className="text-muted-foreground leading-relaxed">
                   KickStart Solutions faces unique challenges in managing a hybrid VR tourism workforce: competing for
-                  digital talent, maintaining engagement across distributed teams, and navigating South Africa's power
+                  digital talent, maintaining engagement across distributed teams, and navigating South Africa&apos;s power
                   instability.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -665,7 +630,7 @@ function Page() {
                   <div>
                     <h4 className="font-semibold text-sm text-foreground">Competitive Positioning</h4>
                     <p className="text-xs text-muted-foreground mt-1">
-                      Establish KickStart as an employer of choice in South Africa's VR tourism industry
+                      Establish KickStart as an employer of choice in South Africa&apos;s VR tourism industry
                     </p>
                   </div>
                 </div>
@@ -796,9 +761,9 @@ function Page() {
                   <div className="bg-muted p-4 rounded-lg mt-6">
                     <h4 className="font-semibold text-foreground mb-3">Employer Branding</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      KickStart's Employee Value Proposition showcases commitment to flexibility, innovation, and
+                      KickStart&apos;s Employee Value Proposition showcases commitment to flexibility, innovation, and
                       inclusive growth. Digital storytelling and employee advocacy programs strengthen the brand as a
-                      forward-thinking employer in South Africa's tech landscape.
+                      forward-thinking employer in South Africa&apos;s tech landscape.
                     </p>
                   </div>
 
@@ -927,7 +892,7 @@ function Page() {
                     <div className="border-l-4 border-chart-4 pl-4">
                       <h4 className="font-semibold text-foreground mb-2">Skills Development</h4>
                       <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                        Monthly virtual masterclasses, project-based learning with "20% time" policy, and just-in-time
+                        Monthly virtual masterclasses, project-based learning with &quot;20%&ldquo; time policy, and just-in-time
                         training for technical skills.
                       </p>
                       <div className="flex flex-wrap gap-2">

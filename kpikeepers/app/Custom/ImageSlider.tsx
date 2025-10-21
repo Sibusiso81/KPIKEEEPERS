@@ -70,7 +70,9 @@ export function ImageSlider({ images, className }: ImageSliderProps) {
     <div className={cn("relative w-full ", inFullscreen ? "h-screen max-h-screen" : "aspect-[16/9]")}>
       {/* Main Image */}
       <div className={`relative h-full w-full  overflow-hidden rounded-lg ${images[currentIndex]?.isBlue ? "bg-indigo-900" : "bg-blue-50"}`}>
-        <img
+        <Image
+        width={200}
+        height={200}
           src={images[currentIndex].src || "/placeholder.svg"}
           alt={images[currentIndex].alt}
           className={cn(
@@ -145,7 +147,9 @@ export function ImageSlider({ images, className }: ImageSliderProps) {
               )}
               aria-label={`Go to image ${index + 1}`}
             >
-              <img src={image.src || "/placeholder.svg"} alt={image.alt} className="h-full w-full object-cover" />
+              <Image
+              width={200}
+              height={200} src={image.src || "/placeholder.svg"} alt={image.alt} className="h-full w-full object-cover" />
             </button>
           ))}
         </div>
